@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import {Header} from './component/header/header'
+import {Footer} from './component/footer/footer'
+import {Menu} from './component/menu/menu'
+import {Card} from './component/card/card'
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className = "flex_block">
+        <Menu title = "menu_name" first = "first" second = "second" third = "third"/>
+        <div className = "flex_wrap">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 }

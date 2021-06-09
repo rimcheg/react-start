@@ -1,0 +1,31 @@
+.card {
+    height: 250px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 16px;
+    align-items: center;
+}
+.top_flex {
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.flex_block {
+    justify-content: space-around;
+}
+.flex_block p {
+    margin: 5px 0 5px 0;
+}
+.card_img {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    justify-content: center;
+}
+.read_more {
+    margin: 15px;
+    width: 150px;
+    height: 20px;
+}
